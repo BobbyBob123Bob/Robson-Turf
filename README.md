@@ -33,7 +33,9 @@ Then open http://localhost:8000.
 ## Before going live
 
 Confirm with the business:
-- Phone numbers, email, opening hours
+- Opening hours (taken from directory listings; phone and email match the current site)
+- Facebook / X / Instagram URLs (the current site links to all three; add them to the footer once known)
 - Delivery areas
 - Variety ratings and wording, and any specific cultivars (e.g. named buffalo varieties) they grow
 - Replace the illustration with real farm photos if available
+- Host on a provider with HTTPS (e.g. Netlify, Cloudflare Pages, GitHub Pages). The current site is served over plain HTTP, so browsers show a "not secure" warning

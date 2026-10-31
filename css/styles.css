@@ -183,7 +183,19 @@ p { margin: 0 0 1em; }
 .hero-inner { padding: clamp(48px, 9vh, 110px) 0 220px; }
 .hero h1 { max-width: 16ch; }
 .hero .lead { font-size: clamp(1.05rem, 1.6vw, 1.22rem); max-width: 40ch; color: #2f3e34; }
-.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 36px; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 36px; }
+
+.hero-varieties { list-style: none; padding: 0; margin: 22px 0 28px; display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-varieties a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 7px 14px 7px 10px; border-radius: 999px;
+  background: rgba(255, 255, 255, .75); border: 1px solid var(--line);
+  font-weight: 700; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--green-800); text-decoration: none;
+  transition: background .15s, border-color .15s;
+}
+.hero-varieties a::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--green-400); }
+.hero-varieties a:hover { background: var(--lime-soft); border-color: var(--green-500); }
 
 .hero-facts {
   list-style: none; padding: 0; margin: 0;
